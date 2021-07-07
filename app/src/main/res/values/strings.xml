@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SS Book Store</string>
+
+    <string name="login_screen">=========Login Screen=========</string>
+    <string name="image_cover">Image cover</string>
+    <string name="username">Username</string>
+    <string name="username_colon">Username:</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="password_colon">Password:</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="register_text">Don\'t have an account? Register here.</string>
+    <string name="register_an_account">Register an account</string>
+
+    <string name="register_screen">=========Register Screen=========</string>
+    <string name="close_image">Close image</string>
+    <string name="reenter_password">Reenter Password</string>
+    <string name="create_account">Create Account</string>
+</resources>
