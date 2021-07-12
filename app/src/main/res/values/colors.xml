@@ -7,8 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="lightBlue">#FF00C9FF</color>
-    <color name="lightGreen">#FF92FE9D</color>
-    <color name="lightGray">#FFABABAB</color>
-    <color name="systemBlue">#FF0000FF</color>
+    <color name="light_blue">#FF00C9FF</color>
+    <color name="light_green">#FF92FE9D</color>
+    <color name="light_gray">#FFABABAB</color>
+    <color name="system_blue">#FF0000FF</color>
+    <color name="system_red">#FFFF3B30</color>
+    <color name="dark_gray">#FFABABAB</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 </resources>

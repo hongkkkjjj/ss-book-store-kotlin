@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SS Book Store</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_message">Error Message</string>
 
     <string name="login_screen">=========Login Screen=========</string>
     <string name="image_cover">Image cover</string>
@@ -12,9 +15,54 @@
     <string name="login">Login</string>
     <string name="register_text">Don\'t have an account? Register here.</string>
     <string name="register_an_account">Register an account</string>
+    <string name="message_username_empty">Username cannot be empty</string>
+    <string name="message_password_empty">Password cannot be empty</string>
+    <string name="message_username_password_invalid">Username or password invalid</string>
 
     <string name="register_screen">=========Register Screen=========</string>
     <string name="close_image">Close image</string>
     <string name="reenter_password">Reenter Password</string>
     <string name="create_account">Create Account</string>
+    <string name="message_reenter_password_empty">Reenter password cannot be empty</string>
+    <string name="message_password_reenter_password_not_same">Password and reenter password need to be same</string>
+
+    <string name="book_list_menu">=========Book List Screen=========</string>
+    <string name="logout">Logout</string>
+    <string name="delete_text">Delete</string>
+    <string name="add_book">Add Book</string>
+    <string name="title_asc">Title ↓</string>
+    <string name="title_desc">Title ↑</string>
+    <string name="title_idle">Title ⇅</string>
+    <string name="date_asc">Date ↓</string>
+    <string name="date_desc">Date ↑</string>
+    <string name="date_idle">Date ⇅</string>
+    <string name="author_asc">Author ↓</string>
+    <string name="author_desc">Author ↑</string>
+    <string name="author_idle">Author ⇅</string>
+    <string name="book_name">Book Name</string>
+    <string name="by_author_placeholder">by %1$s</string>
+
+    <string name="book_details_screen">=========Book Details Screen=========</string>
+    <string name="name_colon">Name:</string>
+    <string name="author_colon">Author:</string>
+    <string name="author_name">Author Name</string>
+    <string name="about_this_book">About this book</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="message_book_cover_empty">Book cover is required</string>
+    <string name="message_book_name_empty">Book name is required</string>
+    <string name="message_author_name_empty">Author name is required</string>
+    <string name="message_book_desc_empty">Book description is required</string>
+    <string name="message_success_update_book">Successfully update book details</string>
+    <string name="message_success_create_book">Successfully create new book</string>
+    <string name="message_failed_update_book">Failed to update book details</string>
+    <string name="message_failed_create_book">Failed to create new book</string>
+
+    <string name="image_bottom_sheet_fragment">=========Image Bottom Sheet Fragment=========</string>
+    <string name="select_image_from">Select image from</string>
+    <string name="camera">Camera</string>
+    <string name="photo_gallery">Photo Gallery</string>
 </resources>
+

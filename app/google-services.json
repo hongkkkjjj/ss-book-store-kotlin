@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "560477239628",
+    "project_id": "ss-book-store",
+    "storage_bucket": "ss-book-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560477239628:android:9fc49fd58fd4fb48d737e9",
+        "android_client_info": {
+          "package_name": "com.softspace.ssbookstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560477239628-b6utipp63hncm9sbij1hj81ngl3sfdda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB86LQE9pplFc8hN6WOvCq3JzecXzX8KEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560477239628-b6utipp63hncm9sbij1hj81ngl3sfdda.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "560477239628-nbshh2t4c5ndr82thd1i87dul8l4o7h9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.softspace.SS-Book-Store"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
