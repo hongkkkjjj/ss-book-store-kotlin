@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBookCover"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_book_placeholder"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBookCover"
+        app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+        >
+
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_name"
+            android:textSize="17sp"
+            android:minHeight="21dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:text="@string/by_author_placeholder"
+            android:textSize="15sp"
+            android:textColor="@color/dark_gray"
+            android:textFontWeight="500"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBookDate"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="@string/date_idle"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        android:textColor="@color/dark_gray"
+        android:textFontWeight="500"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

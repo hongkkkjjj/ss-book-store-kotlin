@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SSBookStore">
-        <activity android:name=".BookListActivity"></activity>
+        <activity
+            android:name=".BookDetailsActivity"
+            android:parentActivityName=".BookListActivity" />
+        <activity android:name=".BookListActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

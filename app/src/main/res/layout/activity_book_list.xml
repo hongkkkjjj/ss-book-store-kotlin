@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".BookListActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fcvBookList"
+        />
+
+    <LinearLayout
+        android:id="@+id/llSorting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <Button
+            android:id="@+id/btnTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:background="@android:color/transparent"
+            android:text="@string/title_asc"
+            android:textColor="@color/system_blue"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/author_idle"
+            android:textColor="@color/system_blue"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btnTitle" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/date_idle"
+            android:textColor="@color/system_blue"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btnTitle" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llSorting" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bookListLoadingScreen"
+        android:theme="@style/ThemeOverlay.SSBookStore.FullscreenContainer"
+        android:background="#4C000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FullscreenLoadingFragment">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bookListAnimationView"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/boxloding" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
