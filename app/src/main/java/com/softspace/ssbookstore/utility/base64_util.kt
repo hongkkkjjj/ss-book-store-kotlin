@@ -17,6 +17,6 @@ object Base64Util {
         imageBitmap.compress(Bitmap.CompressFormat.PNG, 100, baos) // bm is the bitmap object
 
         val imageBytes = baos.toByteArray()
-        return Base64.encodeToString(imageBytes, Base64.DEFAULT)
+        return Base64.encodeToString(imageBytes, Base64.NO_WRAP)
     }
 }
