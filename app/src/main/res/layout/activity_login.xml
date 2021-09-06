@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/register_text"
-        android:textColor="@color/system_blue"
+        android:textColor="?linkTextColor"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"

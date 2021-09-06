@@ -28,8 +28,15 @@ import com.softspace.ssbookstore.data_class.BookDetail
 import com.softspace.ssbookstore.enum_file.TakePhotoType
 import com.softspace.ssbookstore.utility.Base64Util
 import com.softspace.ssbookstore.utility.Util
+import com.softspace.ssbookstore.utility.getColorFromAttr
 import com.softspace.ssbookstore.utility.hideSoftKeyboard
 import java.time.LocalDate
+import android.text.style.ForegroundColorSpan
+
+import android.text.SpannableString
+
+
+
 
 class BookDetailsActivity : AppCompatActivity(), BottomSheetCustomInterface {
 
@@ -56,7 +63,6 @@ class BookDetailsActivity : AppCompatActivity(), BottomSheetCustomInterface {
                 )
         )
 
-        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.WHITE))
         supportActionBar?.title = ""
         val intent = intent
         if (intent.extras != null) {
@@ -81,7 +87,14 @@ class BookDetailsActivity : AppCompatActivity(), BottomSheetCustomInterface {
         menuInflater.inflate(R.menu.menu_book_details, menu)
 
         this.itemEdit = menu?.findItem(R.id.itemEdit)
+        val editStr = SpannableString("Edit")
+        editStr.setSpan(ForegroundColorSpan(getColorFromAttr(R.attr.linkTextColor)), 0, editStr.length, 0)
+        itemEdit?.setTitle(editStr)
+
         this.itemDone = menu?.findItem(R.id.itemDone)
+        val doneStr = SpannableString("Done")
+        doneStr.setSpan(ForegroundColorSpan(getColorFromAttr(R.attr.linkTextColor)), 0, doneStr.length, 0)
+        itemDone?.setTitle(doneStr)
 
         hideMenuItem()
 

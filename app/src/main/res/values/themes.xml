@@ -10,13 +10,15 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
-        <item name="android:actionMenuTextColor">@color/system_blue</item>
-        <item name="actionMenuTextColor">@color/system_blue</item>
-        <item name="actionBarItemBackground">@color/white</item>
-        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?colorPrimary</item>
+        <item name="actionBarItemBackground">?backgroundColor</item>
         <item name="toolbarNavigationButtonStyle">@style/Toolbar.Button.Tinted</item>
         <!-- Customize your theme here. -->
+        <item name="titleTextColor">@color/black</item>
+        <item name="sortButtonColor">@color/system_blue</item>
+        <item name="toolbarColor">@color/white</item>
+        <item name="linkTextColor">@color/system_blue</item>
+        <item name="iconTint">@color/system_blue</item>
     </style>
     <style name="ThemeOverlay.SSBookStore.FullscreenContainer" parent="">
         <item name="fullscreenBackgroundColor">@color/light_blue_600</item>

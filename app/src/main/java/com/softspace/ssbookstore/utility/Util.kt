@@ -1,8 +1,12 @@
 package com.softspace.ssbookstore.utility
 
 import android.app.Activity
+import android.content.Context
+import android.util.TypedValue
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
+import androidx.annotation.AttrRes
+import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import java.time.LocalDate
@@ -19,6 +23,16 @@ object  Util {
     fun convertDateToString(input: LocalDate): String {
         return input.format(DateTimeFormatter.ofPattern("dd MMM yy"))
     }
+}
+
+@ColorInt
+fun Context.getColorFromAttr(
+    @AttrRes attrColor: Int,
+    typedValue: TypedValue = TypedValue(),
+    resolveRefs: Boolean = true
+): Int {
+    theme.resolveAttribute(attrColor, typedValue, resolveRefs)
+    return typedValue.data
 }
 
 fun Activity.hideSoftKeyboard() {

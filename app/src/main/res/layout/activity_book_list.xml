@@ -28,7 +28,7 @@
             android:layout_marginEnd="0dp"
             android:background="@android:color/transparent"
             android:text="@string/title_asc"
-            android:textColor="@color/system_blue"
+            android:textColor="?sortButtonColor"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/author_idle"
-            android:textColor="@color/system_blue"
+            android:textColor="?sortButtonColor"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/btnTitle" />
 
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/date_idle"
-            android:textColor="@color/system_blue"
+            android:textColor="?sortButtonColor"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/btnTitle" />
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Toolbar.Button.Tinted" parent="Widget.AppCompat.Toolbar.Button.Navigation">
-        <item name="tint">@color/system_blue</item>
+        <item name="tint">?iconTint</item>
     </style>
 </resources>

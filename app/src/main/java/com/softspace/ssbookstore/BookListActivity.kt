@@ -9,13 +9,11 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +23,7 @@ import com.softspace.ssbookstore.adapter.FirestoreAdapter
 import com.softspace.ssbookstore.data_class.BookDetail
 import com.softspace.ssbookstore.enum_file.SortType
 import com.softspace.ssbookstore.utility.SharePrefKeys
+import com.softspace.ssbookstore.utility.getColorFromAttr
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 import kotlinx.android.synthetic.main.activity_book_list.*
 
@@ -39,7 +38,6 @@ class BookListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_list)
 
-        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.WHITE))
         supportActionBar?.title = ""
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_exit_to_app)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -169,9 +167,9 @@ class BookListActivity : AppCompatActivity() {
         sortByNameButton.text = getString(R.string.title_idle)
         sortByAuthorButton.text = getString(R.string.author_idle)
         sortByDateButton.text = getString(R.string.date_idle)
-        sortByNameButton.setTextColor(ContextCompat.getColor(this, R.color.system_blue))
-        sortByAuthorButton.setTextColor(ContextCompat.getColor(this, R.color.system_blue))
-        sortByDateButton.setTextColor(ContextCompat.getColor(this, R.color.system_blue))
+        sortByNameButton.setTextColor(getColorFromAttr(R.attr.sortButtonColor))
+        sortByAuthorButton.setTextColor(getColorFromAttr(R.attr.sortButtonColor))
+        sortByDateButton.setTextColor(getColorFromAttr(R.attr.sortButtonColor))
 
 
         when (sortType) {

@@ -2,5 +2,8 @@
     <declare-styleable name="FullscreenAttrs">
         <attr name="fullscreenBackgroundColor" format="color" />
         <attr name="fullscreenTextColor" format="color" />
+        <attr name="sortButtonColor" format="color" />
+        <attr name="toolbarColor" format="color" />
+        <attr name="linkTextColor" format="color" />
     </declare-styleable>
 </resources>

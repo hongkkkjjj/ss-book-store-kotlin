@@ -39,7 +39,7 @@
             android:minHeight="21dp"
             android:maxLines="2"
             android:ellipsize="end"
-            android:textColor="@color/black"
+            android:textColor="?titleTextColor"
             android:layout_marginBottom="10dp"
             />
 
